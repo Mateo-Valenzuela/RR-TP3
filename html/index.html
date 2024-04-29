@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+            <div class="conteiner-fluid">
+                <a class="navbar-brand" href="#">JavaScript</a>
+            </div>
+    </nav>
+
+    <div class="conteiner nt-3">
+        <h4>Formulario</h4>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mb-3">
+                    <label class="form-label">Operación</label>
+                    <select class="form-select" id="slt_operaciónes">
+                        <option selected disabled value="-1">Selecciona Operación</option>
+                        <option value="0">Suma</option>
+                        <option value="1">Resta</option>
+                        <option value="2">Producto</option>
+                        <option value="3">División</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input id="inp_nombre" class="form-control" type="number">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Apellido</label>
+                    <input id="inp_apellido" class="form-control" type="number">
+                </div>
+                <button id="btn_aceptar" class="btn btn-success">Aceptar</button>
+
+                <h3 id="h_resultado"></h3>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+       //Función clasica
+       function mostrar() {
+        let mensaje = 'Impeccionando consola'
+        console.log(mensaje)
+       } 
+
+       const btn = document.getElementById("btn_aceptar")
+       btn.addEventListener("click",mostrar)
+    </script>
+</body>
+</html>
